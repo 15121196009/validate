@@ -181,8 +181,8 @@ You can changes the default values of `jQuery.fn.validate` using `jQuery.validat
 Example:
 ```javascript
 jQuery('form').validateSetup({
-	sendForm : false,
-	onKeyup : true
+  sendForm : false,
+  onKeyup : true
 });
 ```
 
@@ -192,22 +192,22 @@ You can create descriptions to the field states.
 Example:
 ```html
 <form>
-	<input type="text" data-describedby="messages" data-description="test" />
+  <input type="text" data-describedby="messages" data-description="test" />
 
-	<span id="messages"></span>
+  <span id="messages"></span>
 </form>
 ```
 
 ```javascript
 $('form').validate({
-	description : {
-		test : {
-			required : '<div class="error">Required</div>',
-			pattern : '<div class="error">Pattern</div>',
-			conditional : '<div class="error">Conditional</div>',
-			valid : '<div class="success">Valid</div>'
-		}
-	}
+  description : {
+    test : {
+      required : '<div class="error">Required</div>',
+      pattern : '<div class="error">Pattern</div>',
+      conditional : '<div class="error">Conditional</div>',
+      valid : '<div class="success">Valid</div>'
+    }
+  }
 });
 ```
 
